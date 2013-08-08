@@ -6,5 +6,5 @@ body{font-size: 12px;margin: 0; padding: 70px 0 0 0; color:#333; background: #e0
 .product-block .price{color: #ae1d1d}
 .product-block .price .pull-left{font-size: 2em}
 .product-block .price .pull-right{font-size: 1.5em;line-height: 2em}
-.pull-right{float: right; display: inline-block;}
+.pull-right{float: right; display: inline-block; font-weight: bold;}
 .pull-left{float: left;;display: inline-block;}
