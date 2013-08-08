@@ -20,7 +20,7 @@
 							"<div class='product-block'>"+
 								"<a href='"+o.productUrl+"'><img src='"+o.imageUrl+"' style='width:"+imagesize+"px;height:"+imagesize+"px;'/></a>"+
 								"<p class='product-name'>"+o.productName+"</p>"+
-								"<div class='price'></div>"+
+								"<div class='price'><span class='pull-left'>￥"+o.price+"</span><span class='pull-right'>包邮</span></div>"+
 							"</div>"
 						);
 				});
