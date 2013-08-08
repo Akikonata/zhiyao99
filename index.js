@@ -19,7 +19,7 @@
 					body.append(
 							"<div class='product-block'>"+
 								"<a href='"+o.productUrl+"'><img src='"+o.imageUrl+"' style='width:"+imagesize+"px;height:"+imagesize+"px;'/></a>"+
-								"<p>"+o.productName+"</p>"+
+								"<p class='product-name'>"+o.productName+"</p>"+
 								"<div class='price'></div>"+
 							"</div>"
 						);
