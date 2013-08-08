@@ -14,7 +14,7 @@
 				offset = d.offset;
 				var clientWidth = document.body.clientWidth;
 				//console.log(clientWidth);
-				var imagesize = Math.ceil(clientWidth/2 * 0.47);
+				var imagesize = Math.ceil(clientWidth*0.465);
 				list.forEach(function(o){
 					body.append(
 							"<div class='product-block'>"+
