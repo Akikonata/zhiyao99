@@ -17,7 +17,11 @@
 				var imagesize = Math.ceil(clientWidth/2 * 0.47);
 				list.forEach(function(o){
 					body.append(
-							"<div class='product-block'><img src='"+o.imageUrl+"' style='width:"+imagesize+"px;height:"+imagesize+"px;'/></div>"
+							"<div class='product-block'>"+
+								"<a><img src='"+o.imageUrl+"' style='width:"+imagesize+"px;height:"+imagesize+"px;'/></a>"+
+								"<p>"+o.productName+"</p>"+
+								"<div class='price'></div>"+
+							"</div>"
 						);
 				});
 			}
