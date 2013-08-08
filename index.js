@@ -1,7 +1,9 @@
 (function(){
 	var offset = null;
 	var body = $("body");
+	var loading = $("#loading");
 	var getList = function(){
+			loading.show();
 			$.ajax({
 			url:"http://www.zhiyao99.com/pc",
 			type:"get",
@@ -9,7 +11,9 @@
 			jsonp:"jsoncallback",
 			data:{method:"list",offset:offset},
 			success:function(d){
-				console.log(d);
+				//console.log(d);
+				loading.hide();
+				if(d.list.length===0){return false;}
 				var list = d.list;
 				offset = d.offset;
 				var clientWidth = document.body.clientWidth;
@@ -27,5 +31,8 @@
 			}
 		});
 	}
+	$(window).on("scroll",this,function(){
+		if($(this).scrollTop()+$(window).height()>=$(document).height()){getList();}
+	});
 	getList();
 })();
