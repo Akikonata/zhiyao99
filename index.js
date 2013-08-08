@@ -13,10 +13,11 @@
 				var list = d.list;
 				offset = d.offset;
 				var clientWidth = document.body.clientWidth;
-				console.log(clientWidth);
+				//console.log(clientWidth);
+				var imagesize = clientWidth/2 * 0.47;
 				list.forEach(function(o){
 					body.append(
-							"<div class='product-block'><img src='"+o.imageUrl+"' style='width:100px;height:100px;'/></div>"
+							"<div class='product-block'><img src='"+o.imageUrl+"' style='width:"+imagesize+"px;height:"+imagesize+"px;'/></div>"
 						);
 				});
 			}
