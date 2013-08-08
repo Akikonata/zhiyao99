@@ -18,7 +18,7 @@
 				list.forEach(function(o){
 					body.append(
 							"<div class='product-block'>"+
-								"<a><img src='"+o.imageUrl+"' style='width:"+imagesize+"px;height:"+imagesize+"px;'/></a>"+
+								"<a href='"+o.productUrl+"'><img src='"+o.imageUrl+"' style='width:"+imagesize+"px;height:"+imagesize+"px;'/></a>"+
 								"<p>"+o.productName+"</p>"+
 								"<div class='price'></div>"+
 							"</div>"
