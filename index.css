@@ -3,7 +3,6 @@ body{font-size: 12px;margin: 0; padding: 70px 0 0 0; color:#333; background: #e0
 .topbar a{font-size: 1em; color: white;line-height:46px; text-decoration: none; margin-right: 1em;}
 .topbar a:visited{color: white;}
 .product-block{padding: 1%;width: 46.5%;text-align: center;display: inline-block;margin: 0.5%; border-radius: 3px; border: 1px solid #ccc; background: white}
-.product-block .product-name{margin: 10px 0;padding:0; height: 3em; overflow: hidden;}
 .product-block .price{color: #ae1d1d}
 .product-block .price .pull-left{font-size: 2em}
 .product-block .price .pull-right{font-size: 1.5em}
