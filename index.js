@@ -3,7 +3,7 @@
 	var body = $("body");
 	var getList = function(){
 			$.ajax({
-			url:"http://1.93.12.109:8080/pc",
+			url:"http://www.zhiyao99.com/pc",
 			type:"get",
 			dataType:"jsonp",
 			jsonp:"jsoncallback",
@@ -14,7 +14,9 @@
 				offset = d.offset;
 
 				list.forEach(function(o){
-					body.append
+					body.append(
+							"<div></div>"
+						);
 				});
 			}
 		});
