@@ -1,2 +1,2 @@
-body{font-size: 12px;margin: 0; padding: 40px 10px 0 0; color:#333;}
-.product-block{padding: 1%;width: 23%}
+body{font-size: 12px;margin: 0; padding: 40px 10px 0 10px; color:#333;}
+.product-block{padding: 1%;width: 23%;text-align: center;display: inline-block;}
