@@ -1,9 +1,8 @@
 (function(){
 	var offset = null;
 	var body = $("body");
-	var loading = $("#loading");
+	var load_more = $("<div class='bottombar' id='loadmore'><a src='javascript:void(0)''>加载更多</a></div>");
 	var getList = function(){
-			loading.show();
 			$.ajax({
 			url:"http://www.zhiyao99.com/pc",
 			type:"get",
@@ -12,7 +11,7 @@
 			data:{method:"list",offset:offset},
 			success:function(d){
 				//console.log(d);
-				loading.hide();
+				load_more.remove();
 				if(d.list.length===0){return false;}
 				var list = d.list;
 				offset = d.offset;
@@ -28,11 +27,10 @@
 							"</div>"
 						);
 				});
+				body.append(load_more);
 			}
 		});
 	}
-	$(window).on("scroll",this,function(){
-		if($(this).scrollTop()+$(window).height()>=$(document).height()){getList();}
-	});
+	$("body").on("click","#loadmore",function(){getList()});
 	getList();
 })();
