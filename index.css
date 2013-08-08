@@ -3,4 +3,5 @@ body{font-size: 12px;margin: 0; padding: 80px 0 0 0; color:#333;}
 .topbar a{font-size: 2em; color: white;line-height:46px; text-decoration: none; margin-right: 1em;}
 .topbar a:visited{color: white;}
 .product-block{padding: 1%;width: 48%;text-align: center;display: inline-block;}
+.product-block img{width: 40%;height: 40%}
 .pull-right{float: right; display: inline-block;}
