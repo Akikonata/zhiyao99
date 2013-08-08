@@ -15,7 +15,7 @@
 
 				list.forEach(function(o){
 					body.append(
-							"<div></div>"
+							"<div class='product-block'><img src='"+o.imageUrl+"'/></div>"
 						);
 				});
 			}
